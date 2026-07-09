@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>$NIHIL — Nihilistic Penguin</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: radial-gradient(circle at 50% 30%, #2b2d3a 0%, #1a1b22 55%, #101014 100%);
+    color: #e8eaf0;
+    font-family: "Courier New", monospace;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 3rem 1.25rem;
+    gap: 1.4rem;
+  }
+  img.hero {
+    width: min(320px, 72vw);
+    border-radius: 24px;
+    box-shadow: 0 0 90px rgba(0,0,0,.65);
+  }
+  h1 { font-size: clamp(1.6rem, 5vw, 2.6rem); letter-spacing: .05em; font-weight: 700; }
+  .tag { color: #9aa0b4; font-size: 1.05rem; }
+  .ca {
+    background: #101014;
+    border: 1px solid #3a3d4d;
+    border-radius: 8px;
+    padding: .7rem 1rem;
+    font-size: .85rem;
+    word-break: break-all;
+    max-width: 620px;
+    cursor: pointer;
+  }
+  .ca:hover { border-color: #6b7086; }
+  .links { display: flex; gap: 1rem; flex-wrap: wrap; justify-content: center; }
+  .links a {
+    color: #e8eaf0;
+    text-decoration: none;
+    border: 1px solid #4a4d5e;
+    border-radius: 999px;
+    padding: .55rem 1.4rem;
+    transition: background .2s;
+  }
+  .links a:hover { background: #2b2d3a; }
+  .manifesto { max-width: 560px; color: #b9bece; line-height: 1.7; font-size: .95rem; }
+  .gallery { display: flex; gap: .8rem; flex-wrap: wrap; justify-content: center; margin-top: .5rem; }
+  .gallery img { width: 120px; border-radius: 12px; opacity: .85; transition: opacity .2s; }
+  .gallery img:hover { opacity: 1; }
+  .disclaimer { max-width: 560px; color: #6b7086; font-size: .78rem; line-height: 1.6; margin-top: 1.2rem; }
+</style>
+</head>
+<body>
+  <img class="hero" src="assets/peng-glow.jpeg" alt="a penguin that has accepted everything">
+  <h1>$NIHIL</h1>
+  <p class="tag">nothing matters. waddle anyway.</p>
+
+  <div class="ca" onclick="navigator.clipboard.writeText(this.textContent.trim())" title="click to copy">
+    CONTRACT_ADDRESS_HERE
+  </div>
+
+  <div class="links">
+    <a href="https://pump.fun" target="_blank" rel="noopener">pump.fun</a>
+    <a href="https://x.com/Chudley_Dursley" target="_blank" rel="noopener">twitter</a>
+    <a href="https://t.me/nihil_penguin" target="_blank" rel="noopener">telegram</a>
+  </div>
+
+  <p class="manifesto">
+    every coin promises the moon.<br>
+    we promise nothing, and we deliver.<br><br>
+    no roadmap. no utility. no meaning.<br>
+    just a penguin, the void, and you.
+  </p>
+
+  <div class="gallery">
+    <img src="assets/peng-stubble.jpeg" alt="nihilist penguin">
+    <img src="assets/peng-pixel.jpeg" alt="void penguin, 8-bit">
+  </div>
+
+  <p class="disclaimer">
+    $NIHIL is a meme token with no utility, no roadmap, and no intrinsic value.
+    it is a joke. it is not an investment, and nothing here is financial advice.
+    never spend money you cannot afford to lose. the penguin would tell you
+    the same, if it cared.
+  </p>
+</body>
+</html>
